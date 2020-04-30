@@ -11,12 +11,7 @@ import './../style/index.scss'
 import './utils/flexible'
 
 
-// 常用组件
-import VueAwesomeSwiper from 'vue-awesome-swiper'
 import Toast from './components/toast'
-
-// swiper
-import 'swiper/css/swiper.css'
 
 //安装方法
 const install = function (Vue, option) {
@@ -31,8 +26,6 @@ const install = function (Vue, option) {
     Vue.prototype.$http = http;
 
 
-    //swiper
-    Vue.use(VueAwesomeSwiper)
 
     //分享
     Vue.prototype.$share = share(option.share);
@@ -58,8 +51,6 @@ const install = function (Vue, option) {
     }
 
 }
-
-
 
 export default {
     install,

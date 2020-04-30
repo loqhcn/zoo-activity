@@ -6,6 +6,14 @@ import store from './store'
 Vue.config.productionTip = false
 
 
+// swiper
+import 'swiper/css/swiper.css'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+Vue.use(VueAwesomeSwiper)
+
+
+// ## 活动配置 集成sdk
+
 import ZooActivity from './../package/src/index'
 let vm = null;
 //接口配置
@@ -17,7 +25,6 @@ let apiConfig = {
   baseUrl: process.env.VUE_APP_BASEURL || 'http://192.168.1.158/auth.zoocoffee.net/public/zoolifeapi/',
   wechatCallbackUrl: process.env.VUE_APP_WECHAT_CALLBACK || 'http://192.168.1.253:8080/laborday',
 }
-
 
 Vue.use(ZooActivity, {
   //auth配置
@@ -154,6 +161,8 @@ Vue.use(ZooActivity, {
   }
 
 });
+
+// ## vue实例
 
 window.vm = vm = new Vue({
   router,
