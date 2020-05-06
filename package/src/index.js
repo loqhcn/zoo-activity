@@ -10,7 +10,6 @@ import './../style/index.scss'
 // rem适配
 import './utils/flexible'
 
-
 import Toast from './components/toast'
 
 //安装方法
@@ -24,8 +23,6 @@ const install = function (Vue, option) {
     let http = getHttp(option.api, option.auth)
 
     Vue.prototype.$http = http;
-
-
 
     //分享
     Vue.prototype.$share = share(option.share);

@@ -44,7 +44,7 @@ Vue.use(ZooActivity, {
     //formdata方式提交
     formData: true,
     //仅能微信中打开
-    mastWeixin: true,
+    mastWeixin: false,
     //处理跳转登录
     toLogin() {
       vm.$auth.getOpenid(false);
