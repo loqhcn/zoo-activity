@@ -1,13 +1,16 @@
 {
   "name": "zoo-activity",
   "version": "0.1.0",
-  "main": "lib/mulo.umd.js",
+  "main": "lib/index.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build:lib": "vue-cli-service build --target lib --name mulo --dest lib package/src/index.js "
+    "build:lib": "vue-cli-service build --target lib --name index --dest lib package/src/index.js "
   },
+  "files": [
+    "lib"
+  ],
   "dependencies": {
     "axios": "^0.19.2",
     "core-js": "^3.6.4",
